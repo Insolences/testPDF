@@ -1,0 +1,179 @@
+.wrapper{
+    margin: 28px 50px 69px 53px;
+}
+
+.main{
+    margin-bottom: 90px;
+}
+
+.main_title{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 60px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s forwards;
+    width: 0;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+.main_description{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.main_description p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #848199;
+    max-width: 584px;
+    animation: show 2s;
+    opacity: 1;
+}
+
+.main_btn{
+    display: flex;
+}
+
+label {
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 18px;
+    color: #3B3472;
+    font-weight: 500;
+    width: 220px;
+    letter-spacing: 0.833333px;
+    animation: show 2s;
+    opacity: 1;
+}
+
+.btn_color_mode_switch{
+    display: inline-block;
+    position: relative;
+}
+
+.btn_color_mode_switch > label.btn_color_mode_switch_inner{
+    width: 100%;
+    height: 44px;
+    background: #fff;
+    border-radius: 22px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.btn_color_mode_switch > label.btn_color_mode_switch_inner:before{
+    content: attr(data-on);
+    position: absolute;
+    font-size: 12px;
+    font-weight: 500;
+    width:  70px;
+    height: 18px;
+    background: #fff;
+    color: #37447E;
+    border-radius: 22px;
+    text-align: center;
+    right: 20px;
+    top: 14px;
+}
+
+.btn_color_mode_switch > label.btn_color_mode_switch_inner:after{
+    content: attr(data-off);
+    width:  62px;
+    height: 18px;
+    background: #BB6BD9;
+    border-radius: 22px;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+    transition: all 0.3s ease;
+    padding: 13px 24px;
+}
+
+.btn_color_mode_switch input[type="checkbox"]{
+    cursor: pointer;
+    width: 50px;
+    height: 25px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    margin: 0;
+}
+
+.btn_color_mode_switch input[type="checkbox"]:checked + label.btn_color_mode_switch_inner{
+    background: #fff;
+    color: #3B3472;
+}
+
+.btn_color_mode_switch input[type="checkbox"]:checked + label.btn_color_mode_switch_inner:after{
+    content: attr(data-on);
+    left: 110px;
+    background: #BB6BD9;
+}
+
+.btn_color_mode_switch input[type="checkbox"]:checked + label.btn_color_mode_switch_inner:before{
+    content: attr(data-off);
+    left: 20px;
+    top: 14px;
+}
+
+.btn_color_mode_switch input[type="checkbox"]:checked + label.btn_color_mode_switch_inner{
+    background: #fff;
+    color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+    .main{
+        margin-bottom: 32px;
+    }
+
+    .wrapper{
+        margin: 32px 16px;
+    }
+
+    .main_description{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main_description p, h1 {
+       text-align: center;
+    }
+
+    .main_description label{
+        margin-top: 10px;
+    }
+
+    .plans{
+        padding: 32px 28px;
+    }
+
+    .plan_container{
+        margin: 0;
+    }
+}
+
+
+@keyframes show {
+    from {opacity: 0;}
+    25% {opacity: 0}
+    to {opacity: 1;}
+}
+
+@keyframes showPlans {
+    from {opacity: 0;}
+    55% {opacity: 0}
+    to {opacity: 1;}
+}

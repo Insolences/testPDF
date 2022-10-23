@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.ctic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="burger_menu">
+                <span class="burger_icon"/>
+            </div>
+                <a href="index.html" class="logo">
+                    Jadwalin
+                </a>
+            <button class="join_btn">Join Now</button>
+        </header>
+        <section class="main container">
+            <div class="main_theme">
+                <h1 class="main_title">
+                    Plans & Pricing
+                </h1>
+                <div class="main_description">
+                    <p>
+                        Whether your time-saving automation needs are large or small, we’re here to help you scale.
+                    </p>
+                    <div class="btn_switch_container">
+                        <label class="switch btn_color_mode_switch" >
+                            <input type="checkbox" name="color_mode" id="plan_mode" onchange="changePlan()">
+                            <label for="plan_mode" data-on="YEARLY" data-off="MONTHLY" class="btn_color_mode_switch_inner"></label>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="plans container">
+                <div class="plan_container">
+                    <div class="plan_content">
+                        <div class="plan_price_container">
+                            <p class="plan_price" id="starter_plan_mode">
+                                $19
+                            </p>
+                            <span>/month</span>
+                        </div>
+                        <h3 class="plan_title">
+                            Starter
+                        </h3>
+                        <p class="plan_description">Unleash the power of automation.</p>
+                        <ul class="plan_options">
+                            <li>
+                                Multi-step Zaps
+                            </li>
+                            <li>
+                                3 Premium Apps
+                            </li>
+                            <li>
+                                2 Users team
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="choose_btn">Choose plan</button>
+                </div>
+            <div class="plan_container">
+                <div class="plan_content">
+                    <div class="plan_price_container">
+                        <p class="plan_price" id="professional_plan_mode">
+                            $54
+                        </p>
+                        <span>/month</span>
+                    </div>
+                    <h3 class="plan_title">
+                        Professional
+                    </h3>
+                    <p class="plan_description">Advanced tools to take your work to the next level.</p>
+                    <ul class="plan_options">
+                        <li>
+                            Multi-step Zaps
+                        </li>
+                        <li>
+                            Unlimited Premium
+                        </li>
+                        <li>
+                            50 Users team
+                        </li>
+                        <li>
+                            Shared Workspace
+                        </li>
+                    </ul>
+                </div>
+                <button class="choose_btn btn">Choose plan</button>
+            </div>
+            <div class="plan_popular_container">
+                <div class="plan_container">
+                    <div class="plan_popular_content">
+                        <p>
+                            MOST POPULAR
+                        </p>
+                    </div>
+                    <div class="plan_content">
+                        <div class="plan_price_container">
+                            <p class="plan_price" id="company_plan_mode">
+                                $89
+                            </p>
+                            <span>/month</span>
+                        </div>
+                        <h3 class="plan_title">
+                            Company
+                        </h3>
+                        <p class="plan_description">Automation plus enterprise-grade features.</p>
+                        <ul class="plan_options">
+                            <li >
+                                Multi-step Zap
+                            </li>
+                            <li>
+                                Unlimited Premium
+                            </li>
+                            <li>
+                                Unlimited Users Team
+                            </li>
+                            <li>
+                                Advanced Admin
+                            </li>
+                            <li>
+                                Custom Data Retention
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="choose_btn btn">Choose plan</button>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
